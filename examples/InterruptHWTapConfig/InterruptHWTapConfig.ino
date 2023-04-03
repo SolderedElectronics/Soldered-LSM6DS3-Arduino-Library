@@ -13,13 +13,11 @@
  *            Hardware connections:
  *            Connect SDA to A4
  *            Connect SCL to A5
- *            Connect GND and 3.3v power to the IMU
+ *            Connect GND and 3.3v power to the breakout. The sensor are not 5v tolerant.
  *            Or simply use easyC cable
- *            Additionally, Connect INT1 to pin 2 -- Note:  the atmega has 5v input and the
- * 			  LSM6DS3 is 3.3v output. This is OK because the input is high impedance and 3.3v
- *            is a logic '1' for 5v processors. The signal is correctly detected and nothing is damaged.
+ *            Additionally, Connect INT1 to pin 2 
  *
- * 			  NOTE: Do not configure pin 2 as OUTPUT!
+ * 			      NOTE: Do not configure pin 2 as OUTPUT!
  *
  *            Resources:
  *            Uses Wire.h for i2c operation
@@ -44,13 +42,13 @@
 uint8_t int1Status = 0;
 
 // Create object from LSM library
-Soldered_LSM6DS3 myIMU; // Default constructor is I2C, addr 0x6B
+Soldered_LSM6DS3 myIMU; // Default address is 0x6B
 
 void setup()
 {
     // Init serial communication
     Serial.begin(115200);
-    delay(1000); // relax...
+    delay(1000); // Relax...
     Serial.print("The sketch started - ");
 
     // Call .beginCore() to configure the IMU
