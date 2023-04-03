@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['native_0',['native',['../class_easy_c.html#abb766b60f26778dbc64e8792fd754729',1,'EasyC']]]
+  ['i2caddress_0',['I2CAddress',['../class_l_s_m6_d_s3_core.html#a09f25fc4063b175b39df5372a085d971',1,'LSM6DS3Core']]]
 ];

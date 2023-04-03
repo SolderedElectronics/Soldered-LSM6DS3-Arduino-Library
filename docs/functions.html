@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>16x2 easyC LCD Library: Class Members</title>
+<title>Soldered LSM6DS3 Arduino library: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,9 +28,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">16x2 easyC LCD Library<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">Soldered LSM6DS3 Arduino library<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">This is a library for the 16x2 easyC LCD Module</div>
+   <div id="projectbrief">Library for LSM6DS3 accelerometer and gyroscope by Soldered</div>
   </td>
  </tr>
  </tbody>
@@ -93,21 +93,125 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div><ul>
-<li>address&#160;:&#160;<a class="el" href="class_easy_c.html#a6f4c6f2e8723b0c0495e126d49f5fcda">EasyC</a></li>
-<li>begin()&#160;:&#160;<a class="el" href="class_easy_c.html#a1b5a82b8a59daea79de76e496457e176">EasyC</a></li>
-<li>beginDone&#160;:&#160;<a class="el" href="class_easy_c.html#a2f55de657a84e73edda23dae91d30436">EasyC</a></li>
-<li>defaultAddress&#160;:&#160;<a class="el" href="class_easy_c.html#a9052ae674b3553bbb19283278299f395">EasyC</a></li>
-<li>EasyC()&#160;:&#160;<a class="el" href="class_easy_c.html#a2ea672a225a32eab52c2b20733fd26bd">EasyC</a></li>
-<li>err&#160;:&#160;<a class="el" href="class_easy_c.html#a8b880d5daf116adde0cc436f1e4c0853">EasyC</a></li>
-<li>initializeNative()&#160;:&#160;<a class="el" href="class_easy_c.html#a48c8aa55d48ef0cc11047cab0735c998">EasyC</a>, <a class="el" href="class_sensor.html#adb537c76173019fddf84b2d89e6c6559">Sensor</a></li>
-<li>native&#160;:&#160;<a class="el" href="class_easy_c.html#abb766b60f26778dbc64e8792fd754729">EasyC</a></li>
-<li>pin&#160;:&#160;<a class="el" href="class_sensor.html#a0efecf34431610766469857f25e113da">Sensor</a></li>
-<li>readData()&#160;:&#160;<a class="el" href="class_easy_c.html#a9a3d39be50b348768bc4b5dea3dae01a">EasyC</a></li>
-<li>readRegister()&#160;:&#160;<a class="el" href="class_easy_c.html#a45bd6c915c1fa0998e273f69ee2d2376">EasyC</a></li>
-<li>sendAddress()&#160;:&#160;<a class="el" href="class_easy_c.html#a10aa7df19e8c7bf12cd720b662f317a3">EasyC</a></li>
-<li>sendData()&#160;:&#160;<a class="el" href="class_easy_c.html#afe8aa014ae53cad3b0f3c42f59277195">EasyC</a></li>
-<li>Sensor()&#160;:&#160;<a class="el" href="class_sensor.html#a2b8ea6b15267f6fa0e263f57a09f6b62">Sensor</a></li>
+<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
+
+<h3><a id="index_a" name="index_a"></a>- a -</h3><ul>
+<li>accelBandWidth&#160;:&#160;<a class="el" href="struct_sensor_settings.html#ab5f43a77c2343883456bc46e4d7ba5f2">SensorSettings</a></li>
+<li>accelEnabled&#160;:&#160;<a class="el" href="struct_sensor_settings.html#ae3c473bc27517c9d0a66da74573ec33c">SensorSettings</a></li>
+<li>accelFifoDecimation&#160;:&#160;<a class="el" href="struct_sensor_settings.html#af637924e93b897acccd7893709e8a18e">SensorSettings</a></li>
+<li>accelFifoEnabled&#160;:&#160;<a class="el" href="struct_sensor_settings.html#af6e387733014f37429effcee88c310a2">SensorSettings</a></li>
+<li>accelODROff&#160;:&#160;<a class="el" href="struct_sensor_settings.html#afe3fff022141056de86af9eb8c26e87a">SensorSettings</a></li>
+<li>accelRange&#160;:&#160;<a class="el" href="struct_sensor_settings.html#a6e79830bc2f8ee6808a7f09e96ed4291">SensorSettings</a></li>
+<li>accelSampleRate&#160;:&#160;<a class="el" href="struct_sensor_settings.html#ac176f71199e09181bee71db78d3bb939">SensorSettings</a></li>
+<li>allOnesCounter&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#ac29b051cfa62f1b28463c51d81d9f6d7">LSM6DS3</a></li>
+</ul>
+
+
+<h3><a id="index_b" name="index_b"></a>- b -</h3><ul>
+<li>basePage()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3_core.html#a51caf987147b302d84fe4030fa8d7255">LSM6DS3Core</a></li>
+<li>begin()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#afea634e554a46a6c28960477d05b76fe">LSM6DS3</a></li>
+<li>beginCore()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3_core.html#a10e33e4b7bd5edafebf6efe47968a188">LSM6DS3Core</a></li>
+</ul>
+
+
+<h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
+<li>calcAccel()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#a8fb3745792c10ad1924567a40d19f0b9">LSM6DS3</a></li>
+<li>calcGyro()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#a4f758eb48bebbc788dabd8fcb1047bff">LSM6DS3</a></li>
+<li>chipSelectPin&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3_core.html#a76563a24558efd7e36b63b02095887bd">LSM6DS3Core</a></li>
+<li>commInterface&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3_core.html#af0767d2f6b09e2cfe73c5be86b1fc0bc">LSM6DS3Core</a></li>
+<li>commMode&#160;:&#160;<a class="el" href="struct_sensor_settings.html#ab5a6afc0a3ac0d7ce91a3dffc976288a">SensorSettings</a></li>
+</ul>
+
+
+<h3><a id="index_e" name="index_e"></a>- e -</h3><ul>
+<li>embeddedPage()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3_core.html#a35c4e73dbf5677a59a64f8eefc3017f8">LSM6DS3Core</a></li>
+</ul>
+
+
+<h3><a id="index_f" name="index_f"></a>- f -</h3><ul>
+<li>fifoBegin()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#af29fa5c7d7fa18600e1b7d3475878b9e">LSM6DS3</a></li>
+<li>fifoClear()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#aaebd33d6485a09221d86b6eea1e8eed3">LSM6DS3</a></li>
+<li>fifoEnd()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#a2514e622e307f0af88825afc955c8524">LSM6DS3</a></li>
+<li>fifoGetStatus()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#a5dcc7ad6652c7799bbe4f90308fbe316">LSM6DS3</a></li>
+<li>fifoModeWord&#160;:&#160;<a class="el" href="struct_sensor_settings.html#afa92c672ef1d48d144a0b61cb6a63f86">SensorSettings</a></li>
+<li>fifoRead()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#afc29cd394095130cc01179cb2913dcc5">LSM6DS3</a></li>
+<li>fifoSampleRate&#160;:&#160;<a class="el" href="struct_sensor_settings.html#a48f414eeb2d9c7d46c5727ed2c68c052">SensorSettings</a></li>
+<li>fifoThreshold&#160;:&#160;<a class="el" href="struct_sensor_settings.html#a5e142ff5e24120ac4a2b5e835664eecd">SensorSettings</a></li>
+</ul>
+
+
+<h3><a id="index_g" name="index_g"></a>- g -</h3><ul>
+<li>gyroBandWidth&#160;:&#160;<a class="el" href="struct_sensor_settings.html#a13314221fe2669c196a03590cfaa6899">SensorSettings</a></li>
+<li>gyroEnabled&#160;:&#160;<a class="el" href="struct_sensor_settings.html#a5eaf9db553899fc1cb50bf661af27e83">SensorSettings</a></li>
+<li>gyroFifoDecimation&#160;:&#160;<a class="el" href="struct_sensor_settings.html#aa705164af3319dca9a6a93929c896f87">SensorSettings</a></li>
+<li>gyroFifoEnabled&#160;:&#160;<a class="el" href="struct_sensor_settings.html#a94718a45b04785ad77ca1bdecda2bc67">SensorSettings</a></li>
+<li>gyroRange&#160;:&#160;<a class="el" href="struct_sensor_settings.html#a9e8526da7736f2df84da020f5e5793ca">SensorSettings</a></li>
+<li>gyroSampleRate&#160;:&#160;<a class="el" href="struct_sensor_settings.html#ac637e11aa168bf234b4185dba592c090">SensorSettings</a></li>
+</ul>
+
+
+<h3><a id="index_i" name="index_i"></a>- i -</h3><ul>
+<li>I2CAddress&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3_core.html#a09f25fc4063b175b39df5372a085d971">LSM6DS3Core</a></li>
+</ul>
+
+
+<h3><a id="index_l" name="index_l"></a>- l -</h3><ul>
+<li>LSM6DS3()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#abefd319416646456b43aa766b376d51f">LSM6DS3</a></li>
+<li>LSM6DS3Core()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3_core.html#a57f7f10df9e6893ed2bd18a523c388bb">LSM6DS3Core</a></li>
+</ul>
+
+
+<h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
+<li>mySpiSettings&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3_core.html#a0cad9b7460d038941c02c0069bb35c0f">LSM6DS3Core</a></li>
+</ul>
+
+
+<h3><a id="index_n" name="index_n"></a>- n -</h3><ul>
+<li>nonSuccessCounter&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#a415ab06ac06761daf7098f8bce3d59bd">LSM6DS3</a></li>
+</ul>
+
+
+<h3><a id="index_r" name="index_r"></a>- r -</h3><ul>
+<li>readFloatAccelX()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#a755780088c01b70673489b2f47066707">LSM6DS3</a></li>
+<li>readFloatAccelY()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#a0e0a3d194fba1106af13c2021e2a39e1">LSM6DS3</a></li>
+<li>readFloatAccelZ()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#ac2124192750b88886f68699810790fc3">LSM6DS3</a></li>
+<li>readFloatGyroX()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#a9e15dc2c82a7546ded172f0cee5f5309">LSM6DS3</a></li>
+<li>readFloatGyroY()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#a2b51ffaca51a0088da873f1cff1d281d">LSM6DS3</a></li>
+<li>readFloatGyroZ()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#a065aa8b7ca0b6f2b0938c746f47f9fae">LSM6DS3</a></li>
+<li>readRawAccelX()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#afe8fee7d3e38c18647938f0202231236">LSM6DS3</a></li>
+<li>readRawAccelY()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#aa2b694572711a62edfbfdf33fcdec58f">LSM6DS3</a></li>
+<li>readRawAccelZ()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#ae197a1efd80b8466b166acfd8be5db41">LSM6DS3</a></li>
+<li>readRawGyroX()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#aab2e643d40cd85cf83b9d0598a5e0133">LSM6DS3</a></li>
+<li>readRawGyroY()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#ac496ec07cc92730f76baca8eea5ebce6">LSM6DS3</a></li>
+<li>readRawGyroZ()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#a31ca1da6801aa07fab47c1e76e31daf5">LSM6DS3</a></li>
+<li>readRawTemp()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#a49d7ff4eccd1dcf3d79b3bb1fb71c114">LSM6DS3</a></li>
+<li>readRegister()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3_core.html#a34cf8663aa904d12e7c63c5cb3bad4c9">LSM6DS3Core</a></li>
+<li>readRegisterInt16()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3_core.html#ac4c39c741b10ccd5af9659476ad2a11e">LSM6DS3Core</a></li>
+<li>readRegisterRegion()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3_core.html#a7cbeb65814fb2754e9d5af83884186a5">LSM6DS3Core</a></li>
+<li>readTempC()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#a0dc6f4cd02e201b837fbf41c438be42d">LSM6DS3</a></li>
+<li>readTempF()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#a0d375d07776eccca44894d4a9bc755ba">LSM6DS3</a></li>
+</ul>
+
+
+<h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
+<li>settings&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#a29a4a3ccc4615c3bf2fbd5c8a109930c">LSM6DS3</a></li>
+<li>Soldered_LSM6DS3()&#160;:&#160;<a class="el" href="class_soldered___l_s_m6_d_s3.html#aea9fec3daddeb84c879d17f89daf029c">Soldered_LSM6DS3</a></li>
+</ul>
+
+
+<h3><a id="index_t" name="index_t"></a>- t -</h3><ul>
+<li>tempEnabled&#160;:&#160;<a class="el" href="struct_sensor_settings.html#a9e7e21b77f9e6844985284f57a3b797a">SensorSettings</a></li>
+</ul>
+
+
+<h3><a id="index_w" name="index_w"></a>- w -</h3><ul>
+<li>writeRegister()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3_core.html#a75f6570476eb9a49a6ce380c24330a73">LSM6DS3Core</a></li>
+</ul>
+
+
+<h3><a id="index__7E" name="index__7E"></a>- ~ -</h3><ul>
+<li>~LSM6DS3()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3.html#ac2d114b20b5ffdd6f1b7c5805dcc2526">LSM6DS3</a></li>
+<li>~LSM6DS3Core()&#160;:&#160;<a class="el" href="class_l_s_m6_d_s3_core.html#a96a517b25894eb3a58a3bcecf4b1c85a">LSM6DS3Core</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -116,7 +220,7 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
     <!-- id is needed for treeview function! -->
     <ul>
         <li class="footer">
-            Generated on Mon Apr 3 2023 09:54:35 for 16x2 easyC LCD Library by <a href="http://www.doxygen.org/index.html">
+            Generated on Mon Apr 3 2023 13:39:39 for Soldered LSM6DS3 Arduino library by <a href="http://www.doxygen.org/index.html">
                 <img class="footer" src="doxygen.png" alt="doxygen"
                     onerror="this.onerror=null;this.src='doxygen.svg';" /></a> 1.9.6.
             Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.

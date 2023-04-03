@@ -1,4 +1,9 @@
 var searchData=
 [
-  ['initializenative_0',['initializeNative',['../class_sensor.html#adb537c76173019fddf84b2d89e6c6559',1,'Sensor::initializeNative()'],['../class_easy_c.html#a48c8aa55d48ef0cc11047cab0735c998',1,'EasyC::initializeNative()']]]
+  ['gyrobandwidth_0',['gyroBandWidth',['../struct_sensor_settings.html#a13314221fe2669c196a03590cfaa6899',1,'SensorSettings']]],
+  ['gyroenabled_1',['gyroEnabled',['../struct_sensor_settings.html#a5eaf9db553899fc1cb50bf661af27e83',1,'SensorSettings']]],
+  ['gyrofifodecimation_2',['gyroFifoDecimation',['../struct_sensor_settings.html#aa705164af3319dca9a6a93929c896f87',1,'SensorSettings']]],
+  ['gyrofifoenabled_3',['gyroFifoEnabled',['../struct_sensor_settings.html#a94718a45b04785ad77ca1bdecda2bc67',1,'SensorSettings']]],
+  ['gyrorange_4',['gyroRange',['../struct_sensor_settings.html#a9e8526da7736f2df84da020f5e5793ca',1,'SensorSettings']]],
+  ['gyrosamplerate_5',['gyroSampleRate',['../struct_sensor_settings.html#ac637e11aa168bf234b4185dba592c090',1,'SensorSettings']]]
 ];

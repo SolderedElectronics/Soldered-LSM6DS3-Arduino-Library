@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pin_0',['pin',['../class_sensor.html#a0efecf34431610766469857f25e113da',1,'Sensor']]]
+  ['myspisettings_0',['mySpiSettings',['../class_l_s_m6_d_s3_core.html#a0cad9b7460d038941c02c0069bb35c0f',1,'LSM6DS3Core']]]
 ];

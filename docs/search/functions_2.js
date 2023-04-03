@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['initializenative_0',['initializeNative',['../class_sensor.html#adb537c76173019fddf84b2d89e6c6559',1,'Sensor::initializeNative()'],['../class_easy_c.html#a48c8aa55d48ef0cc11047cab0735c998',1,'EasyC::initializeNative()']]]
+  ['embeddedpage_0',['embeddedPage',['../class_l_s_m6_d_s3_core.html#a35c4e73dbf5677a59a64f8eefc3017f8',1,'LSM6DS3Core']]]
 ];
