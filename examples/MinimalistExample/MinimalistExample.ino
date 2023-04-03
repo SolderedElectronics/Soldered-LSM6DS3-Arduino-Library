@@ -9,7 +9,7 @@
  *            Hardware connections:
  *            Connect SDA to A4
  *            Connect SCL to A5
- *            Connect GND and 3.3v power to the IMU
+ *            Connect GND and 3.3v power to the breakout. The sensor are not 5v tolerant.
  *            Or simply use easyC cable
  *
  *            Resources:
@@ -31,7 +31,7 @@
 #include "Wire.h"
 
 // Create object from LSM library
-Soldered_LSM6DS3 myIMU;
+Soldered_LSM6DS3 myIMU; // Default address is 0x6B
 
 void setup()
 {
