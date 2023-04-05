@@ -11,8 +11,8 @@
  *            Connect SCL to A5
  *            Connect GND and 3.3v power to the breakout. The sensor are not 5v tolerant.
  *            Or simply use easyC cable
- * 
- *            NOTE: Multiple I2C devices use the same pins. Up to two LSM6DS3s are allowed. 
+ *
+ *            NOTE: Multiple I2C devices use the same pins. Up to two LSM6DS3s are allowed.
  *                  Use the solder jumper to select address 0x6A or 0x6B
  *
  *            Resources:
@@ -68,9 +68,9 @@ void setup()
 
 void loop()
 {
-    // Get all parameters for each sensor
+    // Get all parameters and print it on the Serial Monitor
 
-    // Get acceleration for sensor one
+    // Read acceleration for sensor one and print it on serial
     Serial.print("\nAccelerometer:\n");
     Serial.print(" X1 = ");
     Serial.println(SensorOne.readFloatAccelX(), 4);
@@ -79,7 +79,7 @@ void loop()
     Serial.print(" Z1 = ");
     Serial.println(SensorOne.readFloatAccelZ(), 4);
 
-    // Get acceleration for sensor two
+    // Read acceleration for sensor two and print it on serial
     Serial.print(" X2 = ");
     Serial.println(SensorTwo.readFloatAccelX(), 4);
     Serial.print(" Y2 = ");
@@ -88,7 +88,8 @@ void loop()
     Serial.println(SensorTwo.readFloatAccelZ(), 4);
 
 
-    // Get rotational velocity for sensor one
+    // Read rotational velocity for sensor one and print it on serial
+    // Note: for precise results, you have to calibrate the gyro
     Serial.print("\nGyroscope:\n");
     Serial.print(" X1 = ");
     Serial.println(SensorOne.readFloatGyroX(), 4);
@@ -97,23 +98,24 @@ void loop()
     Serial.print(" Z1 = ");
     Serial.println(SensorOne.readFloatGyroZ(), 4);
 
-    // Get rotational velocity for sensor twp
+        // Read rotational velocity for sensor two and print it on serial
+    // Note: for precise results, you have to calibrate the gyro
     Serial.print(" X2 = ");
     Serial.println(SensorTwo.readFloatGyroX(), 4);
     Serial.print(" Y2 = ");
     Serial.println(SensorTwo.readFloatGyroY(), 4);
     Serial.print(" Z2 = ");
     Serial.println(SensorTwo.readFloatGyroZ(), 4);
-    
 
-    // Read the temperature from sensor one
+
+    // Read the temperature from sensor one and print it on serial
     Serial.print("\nThermometer:\n");
     Serial.print(" Degrees C1 = ");
     Serial.println(SensorOne.readTempC(), 4);
     Serial.print(" Degrees C2 = ");
     Serial.println(SensorTwo.readTempC(), 4);
 
-    // Read the temperature from sensor two
+    // Read the temperature from sensor two and print it on serial
     Serial.print(" Degrees F1 = ");
     Serial.println(SensorOne.readTempF(), 4);
     Serial.print(" Degrees F2 = ");
