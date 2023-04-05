@@ -58,7 +58,7 @@ void loop()
 {
     // Get all parameters and print it on the Serial Monitor
 
-    // Get acceleration
+    // Read acceleration and print it on serial
     Serial.print("\nAccelerometer:\n");
     Serial.print(" X = ");
     Serial.println(myIMU.readFloatAccelX(), 4);
@@ -67,7 +67,8 @@ void loop()
     Serial.print(" Z = ");
     Serial.println(myIMU.readFloatAccelZ(), 4);
 
-    // Get rotational velocity
+    // Read rotational velocity and print it on serial
+    // Note: for precise results, you have to calibrate the gyro
     Serial.print("\nGyroscope:\n");
     Serial.print(" X = ");
     Serial.println(myIMU.readFloatGyroX(), 4);
@@ -76,7 +77,7 @@ void loop()
     Serial.print(" Z = ");
     Serial.println(myIMU.readFloatGyroZ(), 4);
 
-    // Read the temperature
+    // Read the temperature and print it on serial
     Serial.print("\nThermometer:\n");
     Serial.print(" Degrees C = ");
     Serial.println(myIMU.readTempC(), 4);
