@@ -13,11 +13,12 @@
  *            Hardware connections:
  *            Connect SDA to A4
  *            Connect SCL to A5
- *            Connect GND and 3.3v power to the breakout. The sensor are not 5v tolerant.
- *            Or simply use easyC cable
- *            Additionally, Connect INT1 to pin 2 
+ *            Connect GND and 3V3 or 5V power to the breakout.
+ *            Or simply use easyC cable.
+ *            Additionally, Connect INT1 to pin 2. You can adjust this depending on which
+ *            interrupt pins are on the board is used. This is for Dasduino Core.
  *
- * 			      NOTE: Do not configure pin 2 as OUTPUT!
+ * 			  NOTE: Do not configure pin 2 as OUTPUT!
  *
  *            Resources:
  *            Uses Wire.h for i2c operation
@@ -38,7 +39,7 @@
 #include "Wire.h"
 
 // Interrupt variables
-#define int1Pin 2 // Use pin 2 for interrupt
+#define int1Pin 2 // Use pin 2 for interrupt. Change if you are using a board with other interrupt pins
 uint8_t int1Status = 0;
 
 // Create object from LSM library
@@ -71,7 +72,7 @@ void setup()
 
     uint8_t dataToWrite = 0; // Temporary variable
 
-    // Setup the accelerometer******************************
+    // Setup the accelerometer
     dataToWrite = 0; // Start Fresh!
     dataToWrite |= LSM6DS3_ACC_GYRO_BW_XL_200Hz;
     dataToWrite |= LSM6DS3_ACC_GYRO_FS_XL_2g;
@@ -135,11 +136,11 @@ void loop()
         // Check if there are more than one interrupt pulse
         if (int1Status == 1)
         {
-            Serial.println("Single-tap event");
+            Serial.println("First-tap event");
         }
         if (int1Status > 1)
         {
-            Serial.println("Double-tap event");
+            Serial.println("Second-tap event");
         }
 
         // Clear the ISR counter

@@ -9,7 +9,7 @@
  *            Hardware connections:
  *            Connect SDA to A4
  *            Connect SCL to A5
- *            Connect GND and 3V3 power to the breakout. The sensor are not 5v tolerant.
+ *            Connect GND and 3V3 or 5V power to the breakout.
  *            Or simply use easyC cable.
  *
  *            Resources:
@@ -95,21 +95,26 @@ void compareSettings(SensorSettings desiredSettings)
     {
         Serial.println("'accelBandWidth' was changed!");
     }
+
     if (myIMU.settings.accelRange != desiredSettings.accelRange)
     {
         Serial.println("'accelRange' was changed!");
     }
+
     if (myIMU.settings.accelSampleRate != desiredSettings.accelSampleRate)
     {
         Serial.println("'accelSampleRate' was changed!");
     }
+
     if (myIMU.settings.gyroRange != desiredSettings.gyroRange)
     {
         Serial.println("'gyroRange' was changed!");
     }
+
     if (myIMU.settings.gyroSampleRate != desiredSettings.gyroSampleRate)
     {
         Serial.println("'gyroSampleRate' was changed!");
     }
+
     // That's all the settings that might get changed in 'begin()'
 }

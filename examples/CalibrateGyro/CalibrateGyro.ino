@@ -9,7 +9,7 @@
  *            Hardware connections:
  *            Connect SDA to A4
  *            Connect SCL to A5
- *            Connect GND and 3.3v power to the IMU
+ *            Connect GND and 3V3 or 5V power to the IMU
  *            Or simply use easyC cable
  *
  *            Resources:
@@ -46,7 +46,7 @@ void setup()
 
     // Let's calibrate the gyro
     // IMPORTANT: When the gyroscope is calibrating, don't move it!
-    Serial.print("Calibrating");
+    Serial.print("Calibrating - Don't move gyro!");
 
     // If you want, you can change the number of calibration samples
     int numSamples = 2000;

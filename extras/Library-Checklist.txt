@@ -52,6 +52,6 @@
     | Change to gh-pages branch and /docs folder
 ✅ | Check if docs are made correctly
 ✅ | Check if Board Compatibility test is passing for all boards
-❌ | Check if Arduino Library Manager Compatibility Test is passing
+✅ | Check if Arduino Library Manager Compatibility Test is passing
 ❌ | Make a release with version 1.0.0
 ❌ | PR to Arduino Library Manager if not done already
