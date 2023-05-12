@@ -1,7 +1,7 @@
 /**
  *******************************************************************************************
  *
- * @file      MultiI2C.ino
+ * @file      multiI2C.ino
  * @brief     Example using up to two LSM6DS3s on the same I2C channel. If only one sensor
  *            is attached, this sketch reports failure on that channel and runs with the
  *            single sensor instead.

@@ -1,7 +1,7 @@
 /**
  *******************************************************************************************
  *
- * @file      MemoryPagingExample.ino
+ * @file      memoryPagingExample.ino
  * @brief     This sketch switches between the base memory page and the embedded page.
  *            The test writes to a base address, switches pages, writes to a embedded location
  *            at the same numerical address, switches back and reads the original value.

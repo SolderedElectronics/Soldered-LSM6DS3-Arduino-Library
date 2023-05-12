@@ -1,7 +1,7 @@
 /**
  *******************************************************************************************
  *
- * @file      LowLevelExample.ino
+ * @file      lowLevelExample.ino
  * @brief     Example using the LSM6DS3 with ONLY read and write methods. It's up to you to
  *            read the datasheets and get the sensor to behave as you will. This sketch saves 
  *            a significant amount of memory because the settings and complex math (such as 

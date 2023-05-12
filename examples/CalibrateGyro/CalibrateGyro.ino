@@ -1,8 +1,9 @@
 /**
  *******************************************************************************************
  *
- * @file      CalibrateGyro.ino
+ * @file      calibrateGyro.ino
  * @brief     This example will show you how to calibrate the gyroscope.
+ * 
  *            IMPORTANT: When the gyroscope is calibrating, don't move it!
  *            You can change the number of samples for calibration.
  *

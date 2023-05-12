@@ -1,14 +1,14 @@
 /**
  *******************************************************************************************
  *
- * @file      InterruptHWTapConfig.ino
+ * @file      interruptHWTapConfig.ino
  * @brief     Example using the LSM6DS3 interrupts. This sketch demonstrates one way to
  *            detect single and double-tap events using hardware interrupt pins. The LSM6DS3
  *            pulses the int1 line once after the first tap, then again if a second tap comes in.
  *
  *            The configuration is determined by reading the LSM6DS3 datasheet and application
  *            note, then driving hex values to the registers of interest to set the appropriate
- *            bits. The sketch is based of the "LowLevelExampe" sketch.
+ *            bits. The sketch is based off the "LowLevelExample" sketch.
  *
  *            Hardware connections:
  *            Connect SDA to A4
@@ -18,7 +18,7 @@
  *            Additionally, Connect INT1 to pin 2. You can adjust this depending on which
  *            interrupt pins are on the board is used. This is for Dasduino Core.
  *
- * 			  NOTE: Do not configure pin 2 as OUTPUT!
+ *            NOTE: Do not configure pin 2 as OUTPUT!
  *
  *            Resources:
  *            Uses Wire.h for i2c operation
@@ -111,7 +111,7 @@ void setup()
         Serial.println("Problem configuring the device.");
         while (1)
         {
-            // Nothing...
+            delay(100);
         }
     }
     else

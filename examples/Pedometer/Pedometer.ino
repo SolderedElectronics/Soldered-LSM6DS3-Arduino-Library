@@ -55,7 +55,7 @@ void setup()
         Serial.print("Error at beginCore().\n");
         while (1)
         {
-            // Nothing...
+            delay(100);
         }
     }
     else
@@ -95,7 +95,7 @@ void setup()
         Serial.println("Problem configuring the device.");
         while (1)
         {
-            // Nothing...
+            delay(100);
         }
     }
     else
