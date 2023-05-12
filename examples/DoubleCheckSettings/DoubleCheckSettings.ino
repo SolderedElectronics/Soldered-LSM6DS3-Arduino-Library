@@ -1,7 +1,7 @@
 /**
  *******************************************************************************************
  *
- * @file      DoubleCheckSettings.ino
+ * @file      doubleCheckSettings.ino
  * @brief     Example using the LSM6DS3 with basic settings. This sketch collects Gyro and
  *            Accelerometer data every second, then presents it on the Serial Monitor
  *            at 115200 baud rate.

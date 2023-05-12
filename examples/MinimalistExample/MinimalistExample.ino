@@ -1,7 +1,7 @@
 /**
  *******************************************************************************************
  *
- * @file      MinimalistExample.ino
+ * @file      minimalistExample.ino
  * @brief     Most basic example of use. Example using the LSM6DS3 with basic settings.  
  *            This sketch collects Gyro and Accelerometer data every second, then presents 
  *            it on the Serial Monitor.
@@ -38,7 +38,6 @@ void setup()
     // Init serial communication
     Serial.begin(115200);
     delay(1000); // Relax...
-    Serial.print("The sketch started - ");
 
     // Call .begin() to configure the IMU
     myIMU.begin();
@@ -49,31 +48,35 @@ void loop()
     // Get all parameters and print it on the Serial Monitor
 
     // Read acceleration and print it on serial
-    Serial.print("\nAccelerometer:\n");
-    Serial.print(" X = ");
-    Serial.println(myIMU.readFloatAccelX(), 4);
-    Serial.print(" Y = ");
-    Serial.println(myIMU.readFloatAccelY(), 4);
-    Serial.print(" Z = ");
-    Serial.println(myIMU.readFloatAccelZ(), 4);
+    Serial.print("ACCX:");
+    Serial.print(myIMU.readFloatAccelX(), 4);
+    Serial.print(",");
+    Serial.print("ACCY:");
+    Serial.print(myIMU.readFloatAccelY(), 4);
+    Serial.print(",");
+    Serial.print("ACCZ:");
+    Serial.print(myIMU.readFloatAccelZ(), 4);
+    Serial.print(",");
 
     // Read rotational velocity and print it on serial
     // Note: for precise results, you have to calibrate the gyro
-    Serial.print("\nGyroscope:\n");
-    Serial.print(" X = ");
-    Serial.println(myIMU.readFloatGyroX(), 4);
-    Serial.print(" Y = ");
-    Serial.println(myIMU.readFloatGyroY(), 4);
-    Serial.print(" Z = ");
-    Serial.println(myIMU.readFloatGyroZ(), 4);
+    Serial.print("GYROX:");
+    Serial.print(myIMU.readFloatGyroX(), 4);
+    Serial.print(",");
+    Serial.print("GYROY:");
+    Serial.print(myIMU.readFloatGyroY(), 4);
+    Serial.print(",");
+    Serial.print("GYROZ:");
+    Serial.print(myIMU.readFloatGyroZ(), 4);
+    Serial.print(",");
 
     // Read the temperature and print it on serial
-    Serial.print("\nThermometer:\n");
-    Serial.print(" Degrees C = ");
-    Serial.println(myIMU.readTempC(), 4);
-    Serial.print(" Degrees F = ");
+    Serial.print("DEGC:");
+    Serial.print(myIMU.readTempC(), 4);
+    Serial.print(",");
+    Serial.print("DEGF:");
     Serial.println(myIMU.readTempF(), 4);
 
     // Relax...
-    delay(1000);
+    delay(150);
 }

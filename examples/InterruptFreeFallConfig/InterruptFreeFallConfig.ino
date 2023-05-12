@@ -1,20 +1,24 @@
 /**
  *******************************************************************************************
  *
- * @file      InterruptFreeFallConfig.ino
+ * @file      interruptFreeFallConfig.ino
  * @brief     This sketch demonstrates detecting the free-fall condition. Run the sketch,
  *            open the Serial Monitor at 115200 baud, then drop your sensor / Dasduino
  *            (And catch it!). The sketch will report the free-fall to the monitor.
  *
  *            The configuration is determined by reading the LSM6DS3 datasheet and application
  *            note, then driving hex values to the registers of interest to set the appropriate
- *            bits. The sketch is based of the "LowLevelExampe" sketch.
+ *            bits. The sketch is based off the "LowLevelExample" sketch.
  *
  *            Hardware connections:
  *            Connect SDA to A4
  *            Connect SCL to A5
  *            Connect GND and 3V3 or 5V power to the breakout.
- *            Or simply use easyC cable
+ *            Or simply use easyC cable.
+ *            Additionally, Connect INT1 to pin 2. You can adjust this depending on which
+ *            interrupt pins are on the board is used. This is for Dasduino Core.
+ *
+ *            NOTE: Do not configure pin 2 as OUTPUT!
  *
  *            Resources:
  *            Uses Wire.h for i2c operation
@@ -34,6 +38,10 @@
 #include "LSM6DS3-SOLDERED.h"
 #include "Wire.h"
 
+// Interrupt variables
+#define int1Pin 2 // Use pin 2 for interrupt. Change if you are using a board with other interrupt pins
+volatile bool int1Status = false;
+
 // Create object from LSM library
 Soldered_LSM6DS3 myIMU; // Default address is 0x6B
 
@@ -42,6 +50,7 @@ void setup()
     // Init serial communication
     Serial.begin(115200);
     delay(1000); // Relax...
+
     Serial.print("The sketch started - ");
 
     // Call .beginCore() to configure the IMU
@@ -51,7 +60,7 @@ void setup()
         Serial.print("Error at beginCore().\n");
         while (1)
         {
-            // Nothing...
+            delay(100);
         }
     }
     else
@@ -99,7 +108,7 @@ void setup()
         Serial.println("Problem configuring the device.");
         while (1)
         {
-            // Nothing...
+            delay(100);
         }
     }
     else
@@ -107,23 +116,39 @@ void setup()
         Serial.println("Device O.K.");
         Serial.println("Now you can drop the sensor (And catch it!)");
     }
+
+    // Configure the atmega interrupt pin
+    pinMode(int1Pin, INPUT);
+    attachInterrupt(0, int1ISR, RISING);
 }
+
 
 void loop()
 {
-    uint8_t readDataByte = 0;
-
-    // Read the wake-up source register
-    myIMU.readRegister(&readDataByte, LSM6DS3_ACC_GYRO_WAKE_UP_SRC);
-
-    // Mask off the FF_IA bit for free-fall detection
-    readDataByte &= 0x20;
-
-    // Check for free-fall
-    if (readDataByte)
+    if (int1Status)
     {
-        // debounce
-        delay(10);
-        Serial.println("Interrupt caught, free fall detected!");
+        int1Status = false;
+
+        uint8_t readDataByte = 0;
+
+        // Read the wake-up source register
+        myIMU.readRegister(&readDataByte, LSM6DS3_ACC_GYRO_WAKE_UP_SRC);
+
+        // Mask off the FF_IA bit for free-fall detection
+        readDataByte &= 0x20;
+
+        // Check for free-fall
+        if (readDataByte)
+        {
+            // debounce
+            delay(10);
+            Serial.println("Interrupt caught, free fall detected!");
+        }
     }
+}
+
+// Interrupt service routine
+void int1ISR()
+{
+    int1Status = true;
 }
