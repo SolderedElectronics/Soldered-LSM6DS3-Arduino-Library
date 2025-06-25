@@ -26,9 +26,9 @@ var NAVTREE =
 [
   [ "Soldered LSM6DS3 Arduino library", "index.html", [
     [ "LSM6DS3 accelerometer and gyroscope Arduino library", "index.html", "index" ],
-    [ "SparkFun License Information", "md_src_libs__spark_fun__l_s_m6_d_s3__arduino__library__l_i_c_e_n_s_e.html", [
-      [ "Hardware", "md_src_libs__spark_fun__l_s_m6_d_s3__arduino__library__l_i_c_e_n_s_e.html#autotoc_md9", null ],
-      [ "Code", "md_src_libs__spark_fun__l_s_m6_d_s3__arduino__library__l_i_c_e_n_s_e.html#autotoc_md10", null ]
+    [ "SparkFun License Information", "md_src_2libs_2_spark_fun___l_s_m6_d_s3___arduino___library_2_l_i_c_e_n_s_e.html", [
+      [ "Hardware", "md_src_2libs_2_spark_fun___l_s_m6_d_s3___arduino___library_2_l_i_c_e_n_s_e.html#autotoc_md9", null ],
+      [ "Code", "md_src_2libs_2_spark_fun___l_s_m6_d_s3___arduino___library_2_l_i_c_e_n_s_e.html#autotoc_md10", null ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -58,5 +58,5 @@ var NAVTREEINDEX =
 "_spark_fun_l_s_m6_d_s3_8h.html#aff2f424329212c2655edc422c73043f2"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['tempenabled_0',['tempEnabled',['../struct_sensor_settings.html#a9e7e21b77f9e6844985284f57a3b797a',1,'SensorSettings']]]
+  ['open_20source_20license_0',['Open-source license',['../index.html#autotoc_md7',1,'']]],
+  ['original_20source_1',['Original source',['../index.html#autotoc_md6',1,'']]]
 ];
