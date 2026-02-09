@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['status_5ft_0',['status_t',['../_spark_fun_l_s_m6_d_s3_8h.html#af9bff8ff1154a04a899276af806b8586',1,'SparkFunLSM6DS3.h']]]
+  ['mems_5fstatus_5ft_0',['mems_status_t',['../_l_s_m6_d_s3___a_c_c___g_y_r_o___driver_8h.html#a0eb110c51a92f4695451f00b7186f841',1,'LSM6DS3_ACC_GYRO_Driver.h']]]
 ];

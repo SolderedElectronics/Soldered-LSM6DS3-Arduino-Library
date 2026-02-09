@@ -26,10 +26,6 @@ var NAVTREE =
 [
   [ "Soldered LSM6DS3 Arduino library", "index.html", [
     [ "LSM6DS3 accelerometer and gyroscope Arduino library", "index.html", "index" ],
-    [ "SparkFun License Information", "md_src_2libs_2_spark_fun___l_s_m6_d_s3___arduino___library_2_l_i_c_e_n_s_e.html", [
-      [ "Hardware", "md_src_2libs_2_spark_fun___l_s_m6_d_s3___arduino___library_2_l_i_c_e_n_s_e.html#autotoc_md9", null ],
-      [ "Code", "md_src_2libs_2_spark_fun___l_s_m6_d_s3___arduino___library_2_l_i_c_e_n_s_e.html#autotoc_md10", null ]
-    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -44,6 +40,9 @@ var NAVTREE =
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
+        [ "Functions", "globals_func.html", "globals_func" ],
+        [ "Variables", "globals_vars.html", null ],
+        [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Enumerator", "globals_eval.html", "globals_eval" ]
       ] ]
@@ -54,8 +53,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_l_s_m6_d_s3-_s_o_l_d_e_r_e_d_8cpp.html",
-"_spark_fun_l_s_m6_d_s3_8h.html#a90953235ac7544a4381178a60105f83ba65b50dfd08be9d9065bd6e9fa194ce6e",
-"_spark_fun_l_s_m6_d_s3_8h.html#aff2f424329212c2655edc422c73043f2"
+"_l_s_m6_d_s3___a_c_c___g_y_r_o___driver_8c.html#ac6083e9d211a37066ba109044114d68b",
+"_l_s_m6_d_s3___a_c_c___g_y_r_o___driver_8h.html#a45dd7e754ab0f4a505cdef489242edf6a3173df30fde5a12527c82e19f36bb3a7",
+"_l_s_m6_d_s3___a_c_c___g_y_r_o___driver_8h.html#a8e53c60206069fbb0131d0ad8b0ccf5f",
+"_l_s_m6_d_s3___a_c_c___g_y_r_o___driver_8h.html#ad28f8a10497caf06b4f0df1649124465",
+"class_l_s_m6_d_s3_sensor.html#aedb74f6297aba2fbdec464d5669a019e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

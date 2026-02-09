@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['i2caddress_0',['I2CAddress',['../class_l_s_m6_d_s3_core.html#a09f25fc4063b175b39df5372a085d971',1,'LSM6DS3Core']]],
-  ['imu_5fall_5fones_5fwarning_1',['IMU_ALL_ONES_WARNING',['../_spark_fun_l_s_m6_d_s3_8h.html#af9bff8ff1154a04a899276af806b8586a8ec3c43f0ac93aff7fa488310c4ca1a5',1,'SparkFunLSM6DS3.h']]],
-  ['imu_5fgeneric_5ferror_2',['IMU_GENERIC_ERROR',['../_spark_fun_l_s_m6_d_s3_8h.html#af9bff8ff1154a04a899276af806b8586a8cb8f4cf4e0410bb0494598c5a7fbcf7',1,'SparkFunLSM6DS3.h']]],
-  ['imu_5fhw_5ferror_3',['IMU_HW_ERROR',['../_spark_fun_l_s_m6_d_s3_8h.html#af9bff8ff1154a04a899276af806b8586a0199c41fd02d0efb16eb2de52bf0ccb5',1,'SparkFunLSM6DS3.h']]],
-  ['imu_5fnot_5fsupported_4',['IMU_NOT_SUPPORTED',['../_spark_fun_l_s_m6_d_s3_8h.html#af9bff8ff1154a04a899276af806b8586a3f631ba5fb47be5dd0cfd87495643656',1,'SparkFunLSM6DS3.h']]],
-  ['imu_5fout_5fof_5fbounds_5',['IMU_OUT_OF_BOUNDS',['../_spark_fun_l_s_m6_d_s3_8h.html#af9bff8ff1154a04a899276af806b8586ac34530542e131ab8b786c671027c1100',1,'SparkFunLSM6DS3.h']]],
-  ['imu_5fsuccess_6',['IMU_SUCCESS',['../_spark_fun_l_s_m6_d_s3_8h.html#af9bff8ff1154a04a899276af806b8586a2cc6e178ab410d4577911e03517a0541',1,'SparkFunLSM6DS3.h']]],
-  ['information_7',['Information',['..//github/workspace/gh-pages/src/libs/SparkFun_LSM6DS3_Arduino_Library/README.md#autotoc_md16',1,'License Information'],['../md_src_2libs_2_spark_fun___l_s_m6_d_s3___arduino___library_2_l_i_c_e_n_s_e.html',1,'SparkFun License Information']]]
+  ['i16_5ft_0',['i16_t',['../_l_s_m6_d_s3___a_c_c___g_y_r_o___driver_8h.html#aa6a6e329ac7c2331225540eb4d78fab0',1,'LSM6DS3_ACC_GYRO_Driver.h']]],
+  ['i16bit_1',['i16bit',['../union_type3_axis16bit___u.html#adf5171e296f69de562587f354877aa6e',1,'Type3Axis16bit_U::i16bit'],['../union_type1_axis16bit___u.html#aa79e1e021926686b90fb47fae7a5bf48',1,'Type1Axis16bit_U::i16bit']]],
+  ['i32_5ft_2',['i32_t',['../_l_s_m6_d_s3___a_c_c___g_y_r_o___driver_8h.html#a82227a22f5f8456720924950d4b6e2da',1,'LSM6DS3_ACC_GYRO_Driver.h']]],
+  ['i32bit_3',['i32bit',['../union_type1_axis32bit___u.html#adfb31cbf3e940b484e50fd24e2275cd2',1,'Type1Axis32bit_U']]],
+  ['i8_5ft_4',['i8_t',['../_l_s_m6_d_s3___a_c_c___g_y_r_o___driver_8h.html#a2cc55f70566cd26811686d2b85a125fa',1,'LSM6DS3_ACC_GYRO_Driver.h']]],
+  ['ioread_5',['ioRead',['../class_l_s_m6_d_s3_sensor.html#a868bfff2a61b3a3133fa14ad90e2814b',1,'LSM6DS3Sensor']]],
+  ['iowrite_6',['ioWrite',['../class_l_s_m6_d_s3_sensor.html#ae9bd3a1ac23ae31be8ba36d2725ca00b',1,'LSM6DS3Sensor']]]
 ];

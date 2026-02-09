@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['tempenabled_0',['tempEnabled',['../struct_sensor_settings.html#a9e7e21b77f9e6844985284f57a3b797a',1,'SensorSettings']]],
-  ['that_20use_20this_20library_1',['Products that use this Library',['..//github/workspace/gh-pages/src/libs/SparkFun_LSM6DS3_Arduino_Library/README.md#autotoc_md14',1,'']]],
-  ['this_20library_2',['Products that use this Library',['..//github/workspace/gh-pages/src/libs/SparkFun_LSM6DS3_Arduino_Library/README.md#autotoc_md14',1,'']]]
+  ['wakeupstatus_0',['WakeUpStatus',['../struct_l_s_m6_d_s3___event___status__t.html#a9c8b416fd56cf95f87799fb8abcfff2f',1,'LSM6DS3_Event_Status_t']]],
+  ['writeregister_1',['writeRegister',['../class_l_s_m6_d_s3_sensor.html#ae9ce408e3e314a74a3262bd394f083f5',1,'LSM6DS3Sensor']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nonsuccesscounter_0',['nonSuccessCounter',['../class_l_s_m6_d_s3.html#a415ab06ac06761daf7098f8bce3d59bd',1,'LSM6DS3']]]
+  ['stepstatus_0',['StepStatus',['../struct_l_s_m6_d_s3___event___status__t.html#aa692f13c267e66773bf9af656a1d0728',1,'LSM6DS3_Event_Status_t']]]
 ];

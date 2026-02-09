@@ -109,24 +109,27 @@ $(function(){initNavTree('_l_s_m6_d_s3-_s_o_l_d_e_r_e_d_8h_source.html',''); ini
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define __LSM6DS3__</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;Arduino.h&quot;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="_spark_fun_l_s_m6_d_s3_8h.html">libs/SparkFun_LSM6DS3_Arduino_Library/src/SparkFunLSM6DS3.h</a>&quot;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_soldered___l_s_m6_d_s3.html">   18</a></span><span class="keyword">class </span><a class="code hl_function" href="class_soldered___l_s_m6_d_s3.html#aea9fec3daddeb84c879d17f89daf029c">Soldered_LSM6DS3</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_l_s_m6_d_s3.html#abefd319416646456b43aa766b376d51f">LSM6DS3</a></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keyword">public</span>:</div>
-<div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_soldered___l_s_m6_d_s3.html#aea9fec3daddeb84c879d17f89daf029c">   21</a></span>    <a class="code hl_function" href="class_soldered___l_s_m6_d_s3.html#aea9fec3daddeb84c879d17f89daf029c">Soldered_LSM6DS3</a>(uint8_t inputArg = 0x6B) : <a class="code hl_function" href="class_l_s_m6_d_s3.html#abefd319416646456b43aa766b376d51f">LSM6DS3</a>(I2C_MODE, inputArg)</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    }</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;Wire.h&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="_l_s_m6_d_s3_sensor_8h.html">libs/stm32duino-LSM6DS3/src/LSM6DS3Sensor.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_soldered___l_s_m6_d_s3.html">   19</a></span><span class="keyword">class </span><a class="code hl_function" href="class_soldered___l_s_m6_d_s3.html#a57070beacffbde5517ba118311f00090">Soldered_LSM6DS3</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_l_s_m6_d_s3_sensor.html#aedb74f6297aba2fbdec464d5669a019e">LSM6DS3Sensor</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_soldered___l_s_m6_d_s3.html#a57070beacffbde5517ba118311f00090">   22</a></span>    <a class="code hl_function" href="class_soldered___l_s_m6_d_s3.html#a57070beacffbde5517ba118311f00090">Soldered_LSM6DS3</a>(uint8_t <a class="code hl_variable" href="class_l_s_m6_d_s3_sensor.html#a2b82800d0e0be9696b36e6fe2299becc">address</a> = LSM6DS3_ACC_GYRO_I2C_ADDRESS_HIGH, TwoWire *i2c = &amp;Wire)</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        : <a class="code hl_function" href="class_l_s_m6_d_s3_sensor.html#aedb74f6297aba2fbdec464d5669a019e">LSM6DS3Sensor</a>(i2c, <a class="code hl_variable" href="class_l_s_m6_d_s3_sensor.html#a2b82800d0e0be9696b36e6fe2299becc">address</a>)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
 </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
 </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a_spark_fun_l_s_m6_d_s3_8h_html"><div class="ttname"><a href="_spark_fun_l_s_m6_d_s3_8h.html">SparkFunLSM6DS3.h</a></div></div>
-<div class="ttc" id="aclass_l_s_m6_d_s3_html_abefd319416646456b43aa766b376d51f"><div class="ttname"><a href="class_l_s_m6_d_s3.html#abefd319416646456b43aa766b376d51f">LSM6DS3::LSM6DS3</a></div><div class="ttdeci">LSM6DS3(uint8_t busType=I2C_MODE, uint8_t inputArg=0x6B)</div><div class="ttdef"><b>Definition</b> SparkFunLSM6DS3.cpp:338</div></div>
-<div class="ttc" id="aclass_soldered___l_s_m6_d_s3_html_aea9fec3daddeb84c879d17f89daf029c"><div class="ttname"><a href="class_soldered___l_s_m6_d_s3.html#aea9fec3daddeb84c879d17f89daf029c">Soldered_LSM6DS3::Soldered_LSM6DS3</a></div><div class="ttdeci">Soldered_LSM6DS3(uint8_t inputArg=0x6B)</div><div class="ttdef"><b>Definition</b> LSM6DS3-SOLDERED.h:21</div></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_l_s_m6_d_s3_sensor_8h_html"><div class="ttname"><a href="_l_s_m6_d_s3_sensor_8h.html">LSM6DS3Sensor.h</a></div><div class="ttdoc">Abstract Class of an LSM6DS3 Inertial Measurement Unit (IMU) 6 axes sensor.</div></div>
+<div class="ttc" id="aclass_l_s_m6_d_s3_sensor_html_a2b82800d0e0be9696b36e6fe2299becc"><div class="ttname"><a href="class_l_s_m6_d_s3_sensor.html#a2b82800d0e0be9696b36e6fe2299becc">LSM6DS3Sensor::address</a></div><div class="ttdeci">uint8_t address</div><div class="ttdef"><b>Definition</b> LSM6DS3Sensor.h:256</div></div>
+<div class="ttc" id="aclass_l_s_m6_d_s3_sensor_html_aedb74f6297aba2fbdec464d5669a019e"><div class="ttname"><a href="class_l_s_m6_d_s3_sensor.html#aedb74f6297aba2fbdec464d5669a019e">LSM6DS3Sensor::LSM6DS3Sensor</a></div><div class="ttdeci">LSM6DS3Sensor(TwoWire *i2c, uint8_t address=LSM6DS3_ACC_GYRO_I2C_ADDRESS_HIGH)</div><div class="ttdef"><b>Definition</b> LSM6DS3Sensor.cpp:51</div></div>
+<div class="ttc" id="aclass_soldered___l_s_m6_d_s3_html_a57070beacffbde5517ba118311f00090"><div class="ttname"><a href="class_soldered___l_s_m6_d_s3.html#a57070beacffbde5517ba118311f00090">Soldered_LSM6DS3::Soldered_LSM6DS3</a></div><div class="ttdeci">Soldered_LSM6DS3(uint8_t address=LSM6DS3_ACC_GYRO_I2C_ADDRESS_HIGH, TwoWire *i2c=&amp;Wire)</div><div class="ttdef"><b>Definition</b> LSM6DS3-SOLDERED.h:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
@@ -135,7 +138,7 @@ $(function(){initNavTree('_l_s_m6_d_s3-_s_o_l_d_e_r_e_d_8h_source.html',''); ini
     <ul>
         <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_l_s_m6_d_s3-_s_o_l_d_e_r_e_d_8h.html">LSM6DS3-SOLDERED.h</a></li>
         <li class="footer">
-            Generated on Wed Jun 25 2025 11:52:09 for Soldered LSM6DS3 Arduino library by <a href="http://www.doxygen.org/index.html">
+            Generated on Mon Feb 9 2026 08:18:28 for Soldered LSM6DS3 Arduino library by <a href="http://www.doxygen.org/index.html">
                 <img class="footer" src="doxygen.png" alt="doxygen"
                     onerror="this.onerror=null;this.src='doxygen.svg';" /></a> 1.13.2.
             Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.

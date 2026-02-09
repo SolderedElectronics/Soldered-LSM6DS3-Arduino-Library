@@ -1,4 +1,4 @@
 var dir_87a455bccb09a92130c26a11a880c98a =
 [
-    [ "SparkFun_LSM6DS3_Arduino_Library", "dir_58704454c59c11c4be615e3da8ed8b09.html", "dir_58704454c59c11c4be615e3da8ed8b09" ]
+    [ "stm32duino-LSM6DS3", "dir_6ca9de74aa81d8872e01c85a41387499.html", "dir_6ca9de74aa81d8872e01c85a41387499" ]
 ];

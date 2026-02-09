@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['fifomodeword_0',['fifoModeWord',['../struct_sensor_settings.html#afa92c672ef1d48d144a0b61cb6a63f86',1,'SensorSettings']]],
-  ['fifosamplerate_1',['fifoSampleRate',['../struct_sensor_settings.html#a48f414eeb2d9c7d46c5727ed2c68c052',1,'SensorSettings']]],
-  ['fifothreshold_2',['fifoThreshold',['../struct_sensor_settings.html#a5e142ff5e24120ac4a2b5e835664eecd',1,'SensorSettings']]]
+  ['freefallstatus_0',['FreeFallStatus',['../struct_l_s_m6_d_s3___event___status__t.html#a326a15e48f7a55dcb1f3171216d43e7c',1,'LSM6DS3_Event_Status_t']]]
 ];
