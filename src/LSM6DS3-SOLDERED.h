@@ -13,12 +13,14 @@
 #define __LSM6DS3__
 
 #include "Arduino.h"
-#include "libs/SparkFun_LSM6DS3_Arduino_Library/src/SparkFunLSM6DS3.h"
+#include "Wire.h"
+#include "libs/stm32duino-LSM6DS3/src/LSM6DS3Sensor.h"
 
-class Soldered_LSM6DS3 : public LSM6DS3
+class Soldered_LSM6DS3 : public LSM6DS3Sensor
 {
   public:
-    Soldered_LSM6DS3(uint8_t inputArg = 0x6B) : LSM6DS3(I2C_MODE, inputArg)
+    Soldered_LSM6DS3(uint8_t address = LSM6DS3_ACC_GYRO_I2C_ADDRESS_HIGH, TwoWire *i2c = &Wire)
+        : LSM6DS3Sensor(i2c, address)
     {
     }
 };

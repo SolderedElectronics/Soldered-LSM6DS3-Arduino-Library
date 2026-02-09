@@ -44,7 +44,7 @@ At Soldered, we design and manufacture a wide selection of electronic products t
 
 ### Original source
 ​
-This library is possible thanks to original [SparkFun LSM6DS3](https://github.com/sparkfun/SparkFun_LSM6DS3_Arduino_Library) library. Thank you, SparkFun Electronics.
+This library is possible thanks to the original [stm32duino LSM6DS3](https://github.com/stm32duino/LSM6DS3) library. Thank you, ST.
 
 ### Open-source license
 
