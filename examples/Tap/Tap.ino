@@ -1,15 +1,14 @@
 /**
  *******************************************************************************************
  *
- * @file      Pedometer.ino
- * @brief     This example will show you how to use the pedometer feature.
+ * @file      Tap.ino
+ * @brief     This example will show you how to use the tap detection feature.
  *            Connect the IMU to the board via the Qwiic connector and the interrupt pin to the digital pin 5.
  *
  * @link      solde.red/333069
  *
  * @author    Josip Šimun Kuči @ Soldered
  *******************************************************************************************/
-
 // Includes.
 #include <LSM6DS3-SOLDERED.h>
 
@@ -21,11 +20,6 @@ Soldered_LSM6DS3 lsm6ds3;
 
 //Interrupts.
 volatile int mems_event = 0;
-
-uint32_t previous_tick = 0;
-uint32_t current_tick = 0;
-uint16_t step_count = 0;
-char report[256];
 
 void INT1Event_cb();
 
@@ -44,35 +38,20 @@ void setup() {
   lsm6ds3.begin();
   lsm6ds3.enableAccelerator();
 
-  // Enable Pedometer.
-  lsm6ds3.enablePedometer();
-  
-  previous_tick = millis();
+  // Enable Single Tap Detection.
+  lsm6ds3.enableSingleTapDetection();
 }
 
 void loop() {
-  if (mems_event)
-  {
+  if (mems_event) {
     mems_event = 0;
     LSM6DS3_Event_Status_t status;
     lsm6ds3.getEventStatus(&status);
-    if (status.StepStatus)
+    if (status.TapStatus)
     {
-      // New step detected, so print the step counter
-      lsm6ds3.getStepCounter(&step_count);
-      snprintf(report, sizeof(report), "Step counter: %d", step_count);
-      Serial.println(report);
+      // Output data.
+      Serial.println("Single Tap Detected!");
     }
-  }
-  
-  // Print the step counter in any case every 3000 ms
-  current_tick = millis();
-  if((current_tick - previous_tick) >= 3000)
-  {
-    lsm6ds3.getStepCounter(&step_count);
-    snprintf(report, sizeof(report), "Step counter: %d", step_count);
-    Serial.println(report);
-    previous_tick = millis();
   }
 }
 
