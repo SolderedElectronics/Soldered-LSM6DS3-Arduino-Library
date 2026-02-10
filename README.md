@@ -3,7 +3,7 @@
 [![Make docs and publish to GitHub Pages](https://github.com/SolderedElectronics/Soldered-LSM6DS3-Arduino-Library/actions/workflows/make_docs.yml/badge.svg?branch=dev)](https://github.com/SolderedElectronics/Soldered-LSM6DS3-Arduino-Library/actions/workflows/make_docs.yml)
 [![Arduino Library Manager Compatibility](https://github.com/SolderedElectronics/Soldered-LSM6DS3-Arduino-Library/actions/workflows/arduino_lint.yml/badge.svg?branch=dev)](https://github.com/SolderedElectronics/Soldered-LSM6DS3-Arduino-Library/actions/workflows/arduino_lint.yml)
 
-| ![LSM6DS3 accelerometer and gyroscope](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
+| ![LSM6DS3 accelerometer and gyroscope](https://soldered.com/cdn/shop/files/DSC-0174-1_a707a8e8-24ad-491d-a1e0-1cb95eb1b4a2.jpg) |
 | :------------------------------------------------------------------------------------:                        |
 |                      [LSM6DS3 accelerometer and gyroscope](https://www.solde.red/333069)                         |
 
@@ -17,7 +17,7 @@ LSM6DS3 accelerometer and gyroscope compliant to [easyC ecosystem](https://www.s
 
 ### Hardware design
 
-You can find hardware design for this board in _LSM6DS3 accelerometer and gyroscope_ hardware repository.
+You can find hardware design for this board in LSM6DS3 accelerometer and gyroscope_ hardware repository.
 
 ### Documentation
 
